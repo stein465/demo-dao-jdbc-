@@ -27,6 +27,10 @@ public class Program {
             System.out.println (obj);
         }
 
+        System.out.println ("===== TEST 4 :: INSERT SELLER ======");
+        Seller seller2 = new Seller ( null,"Rogerg", "Roger@gmail", new Date (  ), 2000.0, new Department ( 2,null ) );
+        sellerDao.insert ( seller2 );
+        System.out.println ("inserted: " + seller2.getId ());
 
     }
 }
